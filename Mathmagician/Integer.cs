@@ -8,6 +8,13 @@ namespace Mathmagician
 {
     public class Integer
     {
+        public int Max { get; private set; }
+
+        public Integer()
+        {
+            Max = 50;
+        }
+
         public int GetFirst()
         {
             return 0;

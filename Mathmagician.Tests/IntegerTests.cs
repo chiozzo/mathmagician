@@ -50,5 +50,17 @@ namespace Mathmagician.Tests
             // Assert
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void IntegerEnsureMaxIsNotExceeded()
+        {
+            //Arrange
+            Integer my_int = new Integer();
+            int my_var = my_int.Max;
+            // Act
+            int[] actual = my_int.GetSequence(some_int);
+            // Assert
+            Assert.Throws(typeof(Exception), my_int.GetSequence(some_int));
+        }
     }
 }
