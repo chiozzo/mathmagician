@@ -14,7 +14,6 @@ namespace Mathmagician
         {
             Max = 50;
         }
-
         public int GetFirst()
         {
             return 0;

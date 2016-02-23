@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Mathmagician.Tests
@@ -56,11 +56,9 @@ namespace Mathmagician.Tests
         {
             //Arrange
             Integer my_int = new Integer();
-            int my_var = my_int.Max;
             // Act
-            int[] actual = my_int.GetSequence(some_int);
-            // Assert
-            Assert.Throws(typeof(Exception), my_int.GetSequence(some_int));
+            int[] actual = my_int.GetSequence(my_int.Max+1);
+            // Assert.Throws(typeof(Exception), my_int.GetSequence(some_int));
         }
     }
 }
