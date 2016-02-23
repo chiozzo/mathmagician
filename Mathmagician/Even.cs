@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Even
+    public class Even : Integer
     {
+        public Even()
+        {
+            Step = 2;
+        }
+        public override int GetFirst()
+        {
+            return 2;
+        }
     }
 }

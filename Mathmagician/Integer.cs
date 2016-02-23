@@ -10,26 +10,32 @@ namespace Mathmagician
     {
         public int Max { get; private set; }
 
+        protected int Step { get; set; }
+
         public Integer()
         {
             Max = 50;
+            Step = 1;
         }
-        public int GetFirst()
+        public virtual int GetFirst()
         {
             return 0;
         }
         
-        public int GetNext(int current)
+        public virtual int GetNext(int current)
         {
-            return current + 1;
+            return current + Step;
         }
 
         public int[] GetSequence(int how_many)
         {
             int[] sequence_array = new int[10];
-            for (int i = 0; i < how_many; i++)
+            int counter = 0;
+            sequence_array[counter] = GetFirst();
+            while (counter < how_many - 1)
             {
-                sequence_array[i] = i;
+                counter++;
+                sequence_array[counter] = GetNext(sequence_array[counter - 1]);
             }
             return sequence_array;
         }

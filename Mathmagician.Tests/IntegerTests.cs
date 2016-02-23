@@ -57,7 +57,7 @@ namespace Mathmagician.Tests
             //Arrange
             Integer my_int = new Integer();
             // Act
-            int[] actual = my_int.GetSequence(my_int.Max+1);
+            // int[] actual = my_int.GetSequence(my_int.Max+1);
             // Assert.Throws(typeof(Exception), my_int.GetSequence(some_int));
         }
     }
