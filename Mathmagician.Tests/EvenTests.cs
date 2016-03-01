@@ -42,7 +42,7 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
-        public void EvenIntegerEnsureICanCreateASequenceOfTen()
+        public void EvenEnsureICanCreateASequenceOfTen()
         {
             // Arrange
             Even my_evens = new Even();

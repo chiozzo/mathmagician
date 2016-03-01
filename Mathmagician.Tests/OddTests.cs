@@ -42,7 +42,7 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
-        public void EvenIntegerEnsureICanCreateASequenceOfTen()
+        public void OddEnsureICanCreateASequenceOfTen()
         {
             // Arrange
             Odd my_odds = new Odd();
